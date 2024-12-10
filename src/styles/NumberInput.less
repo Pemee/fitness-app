@@ -1,0 +1,28 @@
+.NumberInput {
+    position: relative; 
+
+    input {
+        padding: 12px; 
+    }
+
+    label {
+        position: absolute; 
+        color: gray;
+        font-style: italic;
+        left: 12px; 
+        top: 12px; 
+        pointer-events: none; 
+        transition: all 145ms ease-out; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        max-width: calc(100% - 24px); 
+    }
+    label.subsided,
+    input:focus+label {
+        line-height: 1; 
+        left: 4px; 
+        top: 2px; 
+        font-size: 10px; 
+        color: #666; 
+    }
+}
